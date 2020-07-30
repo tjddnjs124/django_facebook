@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = 'UTF-8'>
+    <title>title</title>
+</head>
+<body>
+<style>
+    .container{
+        margin : 0;
+    }
+    .page{
+        border : 1px solid #dddddd;
+        margin : 10px;
+    }
+
+</style>
+    <div class = "container">
+        {% for pp in pages %}
+        <div class = "page">
+            <div class = "master">{{pp.master}}</div>
+            <h3 class = "name">{{pp.name}}</h3>
+            <div class = "text">{{pp.text}}</div>
+            <p class = "category">{{pp.category}} </p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
